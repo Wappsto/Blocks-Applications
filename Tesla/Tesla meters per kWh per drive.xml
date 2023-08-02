@@ -36,56 +36,47 @@
 	</value>
 	<next>
 	  <block type="variables_set_wappsto" id="jE!Hj70]?A$7#fU1W+v)">
-	    <field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer
-	    </field>
+	    <field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer</field>
 	    <value name="VALUE">
 	      <block type="wappsto_value" id="kP[4U_[T{hbVWMB8W@[L">
-		<field name="NAME">odometer
-		</field>
+		<field name="NAME">odometer</field>
 		<data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"odometer","id":"72d52d5c-0ae6-4545-8f19-9f80be07aef9","type":"distance","number":{"max":1000,"min":0,"step":1,"unit":"m"}},"states":{"report":"2afdec8b-cfe5-46f1-a4b3-3f3638fb07d2","control":null}}
 		</data>
 	      </block>
 	    </value>
 	    <next>
 	      <block type="variables_set_wappsto" id="1S],v6vlgMW@I|%(2Iae">
-		<field name="FIELD_NAME" id="|6mK}87kRCzxm6V@Q1+D" variabletype="wappsto">My Drive State
-		</field>
+		<field name="FIELD_NAME" id="|6mK}87kRCzxm6V@Q1+D" variabletype="wappsto">My Drive State</field>
 		<value name="VALUE">
 		  <block type="wappsto_value" id="Mp/-fq5H@Y,R+*s71-s2">
-		    <field name="NAME">drive state
-		    </field>
+		    <field name="NAME">drive state</field>
 		    <data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"drive state","id":"f0e6629c-4583-4f3f-9309-6beee0500b55","type":"string","string":{"encoding":"","max":64}},"states":{"report":"c74f326d-cc3f-45d3-85ff-2b7b674b911e","control":null}}
 		    </data>
 		  </block>
 		</value>
 		<next>
 		  <block type="variables_set_wappsto" id="P.d?+cYAz/Qeo:r:L9W$">
-		    <field name="FIELD_NAME" id="[x+L@Jj,N2W.$U%|$A;D" variabletype="wappsto">My charge starting
-		    </field>
+		    <field name="FIELD_NAME" id="[x+L@Jj,N2W.$U%|$A;D" variabletype="wappsto">My charge starting</field>
 		    <value name="VALUE">
 		      <block type="wappsto_value" id=":y3|N)m12Kc.`0QjsJ^W">
-			<field name="NAME">charge starting
-			</field>
+			<field name="NAME">charge starting</field>
 			<data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"charge starting","id":"9a0c9b69-8389-4095-ba92-b9c585eb6c9f","type":"boolean","number":{"mapping":{"0":"off","1":"on"},"max":1,"min":0,"ordered_mapping":true,"step":1,"unit":""}},"states":{"report":"cfcdb03c-9a84-4c92-ba1a-ec6188801909","control":"a7a46196-a45d-4421-aebd-33b242d3f662"}}
 			</data>
 		      </block>
 		    </value>
 		    <next>
 		      <block type="variables_set_wappsto" id="G0MDnb1(lA.Y$GTq:y~_">
-			<field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level
-			</field>
+			<field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level</field>
 			<value name="VALUE">
 			  <block type="wappsto_value" id="m-SiqV-?;2_YJw+v6?n@">
-			    <field name="NAME">battery level
-			    </field>
+			    <field name="NAME">battery level</field>
 			    <data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"battery level","id":"b2940bd6-0374-4c3e-b99a-b24c98fc3f78","type":"percentage","number":{"max":100,"min":0,"si_conversion":"[1] = 100 * [%]","step":1,"unit":"%"}},"states":{"report":"6d004fa3-4580-4b65-99a4-bddbae99b89c","control":null}}
 			    </data>
 			  </block>
 			</value>
 			<next>
 			  <block type="variables_set" id="Q9lt?Yi8J|)essug?#z^">
-			    <field name="VAR" id="00a+xGNRo2r+14#2fLC0">My Battery capacity
-			    </field>
+			    <field name="VAR" id="00a+xGNRo2r+14#2fLC0">My Battery capacity</field>
 			    <value name="VALUE">
 			      <block type="math_number" id="1bV60nIa^n!q/({dxtKR">
 				<field name="NUM">57.5
@@ -94,12 +85,10 @@
 			    </value>
 			    <next>
 			      <block type="variables_set" id="e}Vp)OKB65H2g5z2AC2e">
-				<field name="VAR" id="ss:A=_,1Fq/v2Ag3+x4Y">My battery factor
-				</field>
+				<field name="VAR" id="ss:A=_,1Fq/v2Ag3+x4Y">My battery factor</field>
 				<value name="VALUE">
 				  <block type="math_arithmetic" id="d.aK^?P#K9ZZr{%_,6gX">
-				    <field name="OP">DIVIDE
-				    </field>
+				    <field name="OP">DIVIDE</field>
 				    <value name="A">
 				      <shadow type="math_number" id="{LeA_LEPgQc3CE77+jGK">
 					<field name="NUM">100
@@ -112,50 +101,43 @@
 					</field>
 				      </shadow>
 				      <block type="variables_get" id="VF}iY|C^$HA72K5ohUqj">
-					<field name="VAR" id="00a+xGNRo2r+14#2fLC0">My Battery capacity
-					</field>
+					<field name="VAR" id="00a+xGNRo2r+14#2fLC0">My Battery capacity</field>
 				      </block>
 				    </value>
 				  </block>
 				</value>
 				<next>
 				  <block type="variables_set" id="z|cCRa*X#c#]35wY_O%Z">
-				    <field name="VAR" id="(NNyl*_oY@}?G03(*_|b">Last Drive State
-				    </field>
+				    <field name="VAR" id="(NNyl*_oY@}?G03(*_|b">Last Drive State</field>
 				    <value name="VALUE">
 				      <block type="wappsto_get_state" id="^%x[$JO_9#{Vz19=.6^)">
 					<value name="VALUE">
 					  <block type="variables_get_wappsto" id="w@Lpyy[:N_Nn+@t(m[}b">
-					    <field name="FIELD_NAME" id="|6mK}87kRCzxm6V@Q1+D" variabletype="wappsto">My Drive State
-					    </field>
+					    <field name="FIELD_NAME" id="|6mK}87kRCzxm6V@Q1+D" variabletype="wappsto">My Drive State</field>
 					  </block>
 					</value>
 				      </block>
 				    </value>
 				    <next>
 				      <block type="variables_set" id="#zg4yL7Ejy=ztVOW?dmN">
-					<field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer
-					</field>
+					<field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer</field>
 					<value name="VALUE">
 					  <block type="wappsto_get_state" id=",3:d$D,YduPa~o/5!H:k">
 					    <value name="VALUE">
 					      <block type="variables_get_wappsto" id="G%}n!/ep@AYlNxza*l57">
-						<field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer
-						</field>
+						<field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer</field>
 					      </block>
 					    </value>
 					  </block>
 					</value>
 					<next>
 					  <block type="variables_set" id="UvC=9UZ5*%_x,$luUs~q">
-					    <field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level
-					    </field>
+					    <field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level</field>
 					    <value name="VALUE">
 					      <block type="wappsto_get_state" id="um~vp0bGk|5UHr^WyDq_">
 						<value name="VALUE">
 						  <block type="variables_get_wappsto" id="Uvjr)|}`S_s(BSo2i%D,">
-						    <field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level
-						    </field>
+						    <field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level</field>
 						  </block>
 						</value>
 					      </block>
@@ -186,20 +168,17 @@
       <arg name="New odometer value" varid="`Fxp-FRu%cpJMVnC*G5a">
       </arg>
     </mutation>
-    <field name="NAME">Check updated values
-    </field>
+    <field name="NAME">Check updated values</field>
     <comment pinned="false" h="80" w="160">Describe this function...
     </comment>
     <statement name="STACK">
       <block type="variables_set" id="L6I~7Rhg*4`Z3@uv|g^L">
-	<field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level
-	</field>
+	<field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level</field>
 	<value name="VALUE">
 	  <block type="wappsto_get_state" id="PG]lO17fVs9`$U(tNZJA">
 	    <value name="VALUE">
 	      <block type="variables_get_wappsto" id="7O6tKJtjp}BvXSN(W6h#">
-		<field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level
-		</field>
+		<field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level</field>
 	      </block>
 	    </value>
 	  </block>
@@ -210,16 +189,13 @@
 	    </mutation>
 	    <value name="IF0">
 	      <block type="logic_operation" id="gUir@XGkWj55sgQNgeA8">
-		<field name="OP">AND
-		</field>
+		<field name="OP">AND</field>
 		<value name="A">
 		  <block type="logic_compare" id="W`YeB~or2[^9V?k4PvwR">
-		    <field name="OP">GT
-		    </field>
+		    <field name="OP">GT</field>
 		    <value name="A">
 		      <block type="variables_get" id="(Jba`LX0[i}Jn^P2%@(?">
-			<field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value
-			</field>
+			<field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value</field>
 		      </block>
 		    </value>
 		    <value name="B">
@@ -228,20 +204,17 @@
 			</field>
 		      </shadow>
 		      <block type="variables_get" id="syF9*|F`mzc-+$P2[@40">
-			<field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer
-			</field>
+			<field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer</field>
 		      </block>
 		    </value>
 		  </block>
 		</value>
 		<value name="B">
 		  <block type="logic_compare" id="uf}}!l[D`1{$d*_:5c7l">
-		    <field name="OP">LT
-		    </field>
+		    <field name="OP">LT</field>
 		    <value name="A">
 		      <block type="variables_get" id="j+z[c6^jbB5uFFK-Bzt5">
-			<field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level
-			</field>
+			<field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level</field>
 		      </block>
 		    </value>
 		    <value name="B">
@@ -250,8 +223,7 @@
 			</field>
 		      </shadow>
 		      <block type="variables_get" id="cn#DEnTmtA%O^-fn+aGw">
-			<field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level
-			</field>
+			<field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level</field>
 		      </block>
 		    </value>
 		  </block>
@@ -272,16 +244,14 @@
 		    </value>
 		    <value name="ADD1">
 		      <block type="math_arithmetic" id="hxiHct4kQnP?3/Js{{X_">
-			<field name="OP">MINUS
-			</field>
+			<field name="OP">MINUS</field>
 			<value name="A">
 			  <shadow type="math_number" id="nryQ7W,)qJP)5%4jTVdY">
 			    <field name="NUM">1
 			    </field>
 			  </shadow>
 			  <block type="variables_get" id="F3=EGp[=Y.RxFj3cw2.b">
-			    <field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value
-			    </field>
+			    <field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value</field>
 			  </block>
 			</value>
 			<value name="B">
@@ -290,8 +260,7 @@
 			    </field>
 			  </shadow>
 			  <block type="variables_get" id="wJ6ktc4?1ukSKk|aEVt/">
-			    <field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer
-			    </field>
+			    <field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer</field>
 			  </block>
 			</value>
 		      </block>
@@ -302,22 +271,19 @@
 		  <block type="controls_if" id="l6`U0pP,X5b!/Ij5{a#N">
 		    <value name="IF0">
 		      <block type="logic_compare" id="[%(9f:D^E=h3~@;Gl=ks">
-			<field name="OP">NEQ
-			</field>
+			<field name="OP">NEQ</field>
 			<value name="A">
 			  <block type="wappsto_get_state" id="hm!3gl;5K?vNOm%rRn=h">
 			    <value name="VALUE">
 			      <block type="variables_get_wappsto" id="vaEc8E7`r@[R(0;i3Qns">
-				<field name="FIELD_NAME" id="[x+L@Jj,N2W.$U%|$A;D" variabletype="wappsto">My charge starting
-				</field>
+				<field name="FIELD_NAME" id="[x+L@Jj,N2W.$U%|$A;D" variabletype="wappsto">My charge starting</field>
 			      </block>
 			    </value>
 			  </block>
 			</value>
 			<value name="B">
 			  <shadow type="text" id="K!(q+p/R1t1`vOEe:#L_">
-			    <field name="TEXT">Charging
-			    </field>
+			    <field name="TEXT">Charging</field>
 			  </shadow>
 			</value>
 		      </block>
@@ -336,24 +302,21 @@
 			    </value>
 			    <value name="ADD1">
 			      <block type="math_arithmetic" id="m%dND3v$1*wNrImkBv$C">
-				<field name="OP">DIVIDE
-				</field>
+				<field name="OP">DIVIDE</field>
 				<value name="A">
 				  <shadow type="math_number" id="tYNpiG)V690}{A);d7d@">
 				    <field name="NUM">1
 				    </field>
 				  </shadow>
 				  <block type="math_arithmetic" id="tqmbJ3Ag3J2v+v:Z*|U%">
-				    <field name="OP">MINUS
-				    </field>
+				    <field name="OP">MINUS</field>
 				    <value name="A">
 				      <shadow type="math_number" id="nryQ7W,)qJP)5%4jTVdY">
 					<field name="NUM">1
 					</field>
 				      </shadow>
 				      <block type="variables_get" id="N`Q6Ou}O{5p;J=6$NW@j">
-					<field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value
-					</field>
+					<field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value</field>
 				      </block>
 				    </value>
 				    <value name="B">
@@ -362,8 +325,7 @@
 					</field>
 				      </shadow>
 				      <block type="variables_get" id="%%+JCsB1+a7rdit]cNRB">
-					<field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer
-					</field>
+					<field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer</field>
 				      </block>
 				    </value>
 				  </block>
@@ -374,16 +336,14 @@
 				    </field>
 				  </shadow>
 				  <block type="math_arithmetic" id="!vMPp(e$Onaa88:MCU0T">
-				    <field name="OP">MINUS
-				    </field>
+				    <field name="OP">MINUS</field>
 				    <value name="A">
 				      <shadow type="math_number" id="PCn@Ht]R_M[~U.#^wX[Z">
 					<field name="NUM">1
 					</field>
 				      </shadow>
 				      <block type="variables_get" id="x.Ilv-N8BAh1P%t(a-#6">
-					<field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level
-					</field>
+					<field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level</field>
 				      </block>
 				    </value>
 				    <value name="B">
@@ -392,8 +352,7 @@
 					</field>
 				      </shadow>
 				      <block type="variables_get" id="y+cZQ+ai98z3(q7[Q8s7">
-					<field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level
-					</field>
+					<field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level</field>
 				      </block>
 				    </value>
 				  </block>
@@ -408,40 +367,35 @@
 			    </mutation>
 			    <value name="VALUE">
 			      <block type="wappsto_virtual_value" id="o{@Y,y.8(cWi41#VtQGH">
-				<field name="NAME">meters per kWh
-				</field>
+				<field name="NAME">meters per kWh</field>
 				<data>{"network":{"name":"Tesla meters per kWh per drive","id":"3d3f2ac4-d836-4c47-873d-596569d4d694"},"device":{"name":"Tesla meters per kWh per drive","id":"00de9554-f3a6-4e1d-9732-7ea2078dce63"},"value":{"name":"meters per kWh","id":"36cc486d-f337-4701-8888-e67b7dbaac38","type":"number","template":"NUMBER","number":{"max":128,"min":-128,"si_conversion":"","step":0.1,"unit":""}},"states":{"report":"a689a467-134a-495d-a44c-84fda129547a","control":"2bbf318c-6b78-4a8c-8cfd-a1f519199a13"}}
 				</data>
 			      </block>
 			    </value>
 			    <value name="DATA">
 			      <block type="math_arithmetic" id="H~AJPKW3}L%KbzE9b`;L">
-				<field name="OP">MULTIPLY
-				</field>
+				<field name="OP">MULTIPLY</field>
 				<value name="A">
 				  <shadow type="math_number" id="UJT=11YW@f?Rax+E$NpN">
 				    <field name="NUM">1
 				    </field>
 				  </shadow>
 				  <block type="math_arithmetic" id="HD[4:q[:dCwL][01=6E2">
-				    <field name="OP">DIVIDE
-				    </field>
+				    <field name="OP">DIVIDE</field>
 				    <value name="A">
 				      <shadow type="math_number" id="tYNpiG)V690}{A);d7d@">
 					<field name="NUM">1
 					</field>
 				      </shadow>
 				      <block type="math_arithmetic" id="3y;`~`?iF%(x9OQr8aN@">
-					<field name="OP">MINUS
-					</field>
+					<field name="OP">MINUS</field>
 					<value name="A">
 					  <shadow type="math_number" id="nryQ7W,)qJP)5%4jTVdY">
 					    <field name="NUM">1
 					    </field>
 					  </shadow>
 					  <block type="variables_get" id="u%+p!!:yDQ`qz/H4s*_V">
-					    <field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value
-					    </field>
+					    <field name="VAR" id="`Fxp-FRu%cpJMVnC*G5a">New odometer value</field>
 					  </block>
 					</value>
 					<value name="B">
@@ -450,8 +404,7 @@
 					    </field>
 					  </shadow>
 					  <block type="variables_get" id="L5G}i?G%oU)NCcbL|s#~">
-					    <field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer
-					    </field>
+					    <field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer</field>
 					  </block>
 					</value>
 				      </block>
@@ -462,16 +415,14 @@
 					</field>
 				      </shadow>
 				      <block type="math_arithmetic" id="G8Yb8_pXd{fOY0WY*Zk;">
-					<field name="OP">MINUS
-					</field>
+					<field name="OP">MINUS</field>
 					<value name="A">
 					  <shadow type="math_number" id="PCn@Ht]R_M[~U.#^wX[Z">
 					    <field name="NUM">1
 					    </field>
 					  </shadow>
 					  <block type="variables_get" id="L,Rujfn!)!4sK0Wv]Hc,">
-					    <field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level
-					    </field>
+					    <field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level</field>
 					  </block>
 					</value>
 					<value name="B">
@@ -480,8 +431,7 @@
 					    </field>
 					  </shadow>
 					  <block type="variables_get" id="E3Pt,s%,vN.n!Ak6,v^1">
-					    <field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level
-					    </field>
+					    <field name="VAR" id="g0)p+vtj:Yl)=}wi{Xx%">New battery level</field>
 					  </block>
 					</value>
 				      </block>
@@ -494,8 +444,7 @@
 				    </field>
 				  </shadow>
 				  <block type="variables_get" id="?**Y]5;Hx-e~GA#KW|/M">
-				    <field name="VAR" id="ss:A=_,1Fq/v2Ag3+x4Y">My battery factor
-				    </field>
+				    <field name="VAR" id="ss:A=_,1Fq/v2Ag3+x4Y">My battery factor</field>
 				  </block>
 				</value>
 			      </block>
@@ -528,40 +477,34 @@
     </mutation>
     <value name="VALUE">
       <block type="variables_get_wappsto" id="zi5hZUdbEt@?.c;X%jI?">
-	<field name="FIELD_NAME" id="|6mK}87kRCzxm6V@Q1+D" variabletype="wappsto">My Drive State
-	</field>
+	<field name="FIELD_NAME" id="|6mK}87kRCzxm6V@Q1+D" variabletype="wappsto">My Drive State</field>
       </block>
     </value>
     <value name="DATA">
       <block type="variables_get" id="eNe6ZV+yBN#pI^n/vnir">
-	<field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData
-	</field>
+	<field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData</field>
       </block>
     </value>
     <statement name="CONTENT">
       <block type="wappsto_console_log" id="}cUySm,N`++@W%?4{#FS">
 	<value name="log">
 	  <block type="variables_get" id="KCA5$r_f}X$,y=umbc_r">
-	    <field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData
-	    </field>
+	    <field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData</field>
 	  </block>
 	</value>
 	<next>
 	  <block type="controls_if" id="5fu*mx2U-8QXY_94WWoh">
 	    <value name="IF0">
 	      <block type="logic_compare" id="-LE4LB@Xg!Z#,cM53BkZ">
-		<field name="OP">EQ
-		</field>
+		<field name="OP">EQ</field>
 		<value name="A">
 		  <block type="variables_get" id="{DDg7=)IZafREsoMPv+g">
-		    <field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData
-		    </field>
+		    <field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData</field>
 		  </block>
 		</value>
 		<value name="B">
 		  <shadow type="text" id="`3~oBag$O=LU_2O=zE7v">
-		    <field name="TEXT">Parked
-		    </field>
+		    <field name="TEXT">Parked</field>
 		  </shadow>
 		</value>
 	      </block>
@@ -570,18 +513,15 @@
 	      <block type="controls_if" id="H+18T4)r[JAH3LR/UfAc">
 		<value name="IF0">
 		  <block type="logic_compare" id="9yEioa:_N|ViMl39EbL1">
-		    <field name="OP">NEQ
-		    </field>
+		    <field name="OP">NEQ</field>
 		    <value name="A">
 		      <block type="variables_get" id="lfw`;:hfyRfs5U)/QSJe">
-			<field name="VAR" id="(NNyl*_oY@}?G03(*_|b">Last Drive State
-			</field>
+			<field name="VAR" id="(NNyl*_oY@}?G03(*_|b">Last Drive State</field>
 		      </block>
 		    </value>
 		    <value name="B">
 		      <shadow type="text" id="Qp9-re31M2@roIk0Z1_,">
-			<field name="TEXT">Parked
-			</field>
+			<field name="TEXT">Parked</field>
 		      </shadow>
 		    </value>
 		  </block>
@@ -596,8 +536,7 @@
 		      <block type="wappsto_get_state" id="sV,(R1fGuE/35DD7urkw">
 			<value name="VALUE">
 			  <block type="variables_get_wappsto" id=".I-lGA]u1]_1UP,|n}#D">
-			    <field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer
-			    </field>
+			    <field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer</field>
 			  </block>
 			</value>
 		      </block>
@@ -606,28 +545,24 @@
 		</statement>
 		<next>
 		  <block type="variables_set" id="nKnUqIW|A-EQAwSQ/0@c">
-		    <field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer
-		    </field>
+		    <field name="VAR" id="v5Z{x-@k$[){q_AQ3QuD">last odometer</field>
 		    <value name="VALUE">
 		      <block type="wappsto_get_state" id="D1$j%`3^%EP,P5n(qGMS">
 			<value name="VALUE">
 			  <block type="variables_get_wappsto" id="QVBy[~u1O~OWc%DAeJC`">
-			    <field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer
-			    </field>
+			    <field name="FIELD_NAME" id="b-0#c`wX[@Nzj):0zEdH" variabletype="wappsto">My odometer</field>
 			  </block>
 			</value>
 		      </block>
 		    </value>
 		    <next>
 		      <block type="variables_set" id="373W{Jk!vA[PKB7GwLFT">
-			<field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level
-			</field>
+			<field name="VAR" id="c+|^*xBmuEl).v9uVAtJ">last battery level</field>
 			<value name="VALUE">
 			  <block type="wappsto_get_state" id="E{=xu(hp6+|4Nl5_C8bp">
 			    <value name="VALUE">
 			      <block type="variables_get_wappsto" id="B$ZwNbctxZb1Z{JUBq}v">
-				<field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level
-				</field>
+				<field name="FIELD_NAME" id=";Y8jAFuTkQ!^.d=)?7pv" variabletype="wappsto">My battery level</field>
 			      </block>
 			    </value>
 			  </block>
@@ -640,12 +575,10 @@
 	    </statement>
 	    <next>
 	      <block type="variables_set" id="/8PK_H,F*37UEntQv$zI">
-		<field name="VAR" id="(NNyl*_oY@}?G03(*_|b">Last Drive State
-		</field>
+		<field name="VAR" id="(NNyl*_oY@}?G03(*_|b">Last Drive State</field>
 		<value name="VALUE">
 		  <block type="variables_get" id="`^o/4X:C+D/A;~K,J#M#">
-		    <field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData
-		    </field>
+		    <field name="VAR" id="GM24qg8wzmb,n)igU?rX">receivedData</field>
 		  </block>
 		</value>
 	      </block>

@@ -22,32 +22,28 @@
     </mutation>
     <value name="VALUE">
       <block type="wappsto_value" id="^M]1dcnYeR)-pWh~+L+#">
-	<field name="NAME">currentName
-	</field>
+	<field name="NAME">currentName</field>
 	<data>{"network":{"name":"Google Calendar","id":"97e929bf-6376-4284-ba1f-81c121611eca"},"device":{"name":"Tesla Charging","id":"1f7cdda9-f227-4926-b81f-070d5c667ded"},"value":{"name":"currentName","id":"cc797840-62ac-4fd2-ba28-bc6070b09eef","type":"string","string":{"encoding":"","max":64}},"states":{"report":"68f0325d-209e-4fde-87d9-8648e7795607","control":null}}
 	</data>
       </block>
     </value>
     <value name="DATA">
       <block type="variables_get" id="G]okfBBcFvm_9EKF0{:#">
-	<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData
-	</field>
+	<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData</field>
       </block>
     </value>
     <statement name="CONTENT">
       <block type="wappsto_console_log" id="$Xnmn*]O}K/@:~l,/rT+">
 	<value name="log">
 	  <block type="text" id="AGHjafCp(L0ECMf-7W)u">
-	    <field name="TEXT">Value received
-	    </field>
+	    <field name="TEXT">Value received</field>
 	  </block>
 	</value>
 	<next>
 	  <block type="wappsto_console_log" id="5MlQvHDH?k`}H}jqe*29">
 	    <value name="log">
 	      <block type="variables_get" id="gf$p;-(@sa5.^GRyOdCC">
-		<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData
-		</field>
+		<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData</field>
 	      </block>
 	    </value>
 	    <next>
@@ -56,22 +52,18 @@
 		</mutation>
 		<value name="IF0">
 		  <block type="logic_compare" id="E!wT:(V%ScAmWRvv1:~E">
-		    <field name="OP">EQ
-		    </field>
+		    <field name="OP">EQ</field>
 		    <value name="A">
 		      <block type="text_indexOf" id="s`NC{9D@r6P?MG^RL]=L">
-			<field name="END">FIRST
-			</field>
+			<field name="END">FIRST</field>
 			<value name="VALUE">
 			  <block type="variables_get" id="v-V=s[2aiHdkL~x(Lc=b">
-			    <field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData
-			    </field>
+			    <field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData</field>
 			  </block>
 			</value>
 			<value name="FIND">
 			  <block type="text" id="/]wCXlBiA$%5K$`I=0r-">
-			    <field name="TEXT">Start Charging
-			    </field>
+			    <field name="TEXT">Start Charging</field>
 			  </block>
 			</value>
 		      </block>
@@ -88,22 +80,18 @@
 		  <block type="controls_if" id="$.)x|D^,REKcfJ^q)O%.">
 		    <value name="IF0">
 		      <block type="logic_compare" id="Ef:4+*b3R:cf2iJ-W+c-">
-			<field name="OP">GTE
-			</field>
+			<field name="OP">GTE</field>
 			<value name="A">
 			  <block type="text_indexOf" id="|9V*K5~1MV93qGk`BA87">
-			    <field name="END">FIRST
-			    </field>
+			    <field name="END">FIRST</field>
 			    <value name="VALUE">
 			      <block type="variables_get" id="!Vu=TsrTsuQdC4WWfZ@7">
-				<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData
-				</field>
+				<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData</field>
 			      </block>
 			    </value>
 			    <value name="FIND">
 			      <block type="text" id="s6lqefdn+e4Qe8Q$9KO!">
-				<field name="TEXT">to
-				</field>
+				<field name="TEXT">to</field>
 			      </block>
 			    </value>
 			  </block>
@@ -120,16 +108,14 @@
 		      <block type="wappsto_console_log" id="Ie}7lt79xIyagDgC(VGd">
 			<value name="log">
 			  <block type="text" id="D5v%5A(s~zFSP?}=-@S=">
-			    <field name="TEXT">Setting new charge limit
-			    </field>
+			    <field name="TEXT">Setting new charge limit</field>
 			  </block>
 			</value>
 			<next>
 			  <block type="wappsto_change" id="W1~=[ox,)^BIkZz,cU?#">
 			    <value name="VALUE">
 			      <block type="wappsto_value" id="Km3qRW.yx(By:!h;fZK?">
-				<field name="NAME">charge limit
-				</field>
+				<field name="NAME">charge limit</field>
 				<data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"charge limit","id":"dbb8391a-3646-4ed5-a950-c7505a328cd0","type":"percentage","number":{"max":100,"min":0,"si_conversion":"[1] = 100 * [%]","step":1,"unit":"%"}},"states":{"report":"2492660d-4ddd-4a59-be25-22e38d1e7e8b","control":"e506f8bb-62c4-4ac7-a06a-e83209164188"}}
 				</data>
 			      </block>
@@ -144,38 +130,31 @@
 				  <block type="text_getSubstring" id="V*/6YM/DxZf;G=O?Z`)F">
 				    <mutation at1="true" at2="true">
 				    </mutation>
-				    <field name="WHERE1">FROM_START
-				    </field>
-				    <field name="WHERE2">FROM_END
-				    </field>
+				    <field name="WHERE1">FROM_START</field>
+				    <field name="WHERE2">FROM_END</field>
 				    <value name="STRING">
 				      <block type="variables_get" id="*rrX,i70_3*$e2c;=os!">
-					<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData
-					</field>
+					<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData</field>
 				      </block>
 				    </value>
 				    <value name="AT1">
 				      <block type="math_arithmetic" id=")YuE|0J:F,.Z1fsSB5,3">
-					<field name="OP">ADD
-					</field>
+					<field name="OP">ADD</field>
 					<value name="A">
 					  <shadow type="math_number" id="dI%Z?7d5pRYx`(g$t)C0">
 					    <field name="NUM">1
 					    </field>
 					  </shadow>
 					  <block type="text_indexOf" id="MOy,;U^ySe[?Iz0OH{eC">
-					    <field name="END">FIRST
-					    </field>
+					    <field name="END">FIRST</field>
 					    <value name="VALUE">
 					      <block type="variables_get" id="Csxs;#O]JEkKe[TTxMYR">
-						<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData
-						</field>
+						<field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData</field>
 					      </block>
 					    </value>
 					    <value name="FIND">
 					      <block type="text" id="x9P|73YNi?#0S={kmIUW">
-						<field name="TEXT">to
-						</field>
+						<field name="TEXT">to</field>
 					      </block>
 					    </value>
 					  </block>
@@ -206,16 +185,14 @@
 		      <block type="wappsto_console_log" id="oZ=Kj?fK}quVeq:i}OGU">
 			<value name="log">
 			  <block type="text" id="b+I%6pC^T5@nt$tH?G-~">
-			    <field name="TEXT">Starting to charge
-			    </field>
+			    <field name="TEXT">Starting to charge</field>
 			  </block>
 			</value>
 			<next>
 			  <block type="wappsto_change" id="hAPh`+d!MC.|MSf=n1ex">
 			    <value name="VALUE">
 			      <block type="wappsto_value" id="O);$}`{tKv,)r#%Q5GW@">
-				<field name="NAME">charge starting
-				</field>
+				<field name="NAME">charge starting</field>
 				<data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"charge starting","id":"9a0c9b69-8389-4095-ba92-b9c585eb6c9f","type":"boolean","number":{"mapping":{"0":"off","1":"on"},"max":1,"min":0,"step":1,"unit":""}},"states":{"report":"cfcdb03c-9a84-4c92-ba1a-ec6188801909","control":"a7a46196-a45d-4421-aebd-33b242d3f662"}}
 				</data>
 			      </block>
@@ -234,14 +211,12 @@
 			    </value>
 			    <next>
 			      <block type="variables_set" id="R.TV.mRP(p0/.`zr|F_Z">
-				<field name="VAR" id="X[uOmNBKaMFfL2E7MBk@">Switch off time
-				</field>
+				<field name="VAR" id="X[uOmNBKaMFfL2E7MBk@">Switch off time</field>
 				<value name="VALUE">
 				  <block type="wappsto_get_state" id="iGy|Cci}Al3(sn#_|yh.">
 				    <value name="VALUE">
 				      <block type="wappsto_value" id="e@dw9!jU)$w_XuJ,h2=@">
-					<field name="NAME">currentEnd
-					</field>
+					<field name="NAME">currentEnd</field>
 					<data>{"network":{"name":"Google Calendar","id":"97e929bf-6376-4284-ba1f-81c121611eca"},"device":{"name":"Tesla Charging","id":"1f7cdda9-f227-4926-b81f-070d5c667ded"},"value":{"name":"currentEnd","id":"9c6b1814-5ef8-441f-be3d-c25e691ce281","type":"timestamp","string":{"encoding":"ISO 8601","max":27}},"states":{"report":"106540e9-5e2e-448b-b623-b8198963664f","control":null}}
 					</data>
 				      </block>
@@ -254,16 +229,14 @@
 				    </mutation>
 				    <value name="TIMESTAMP">
 				      <block type="variables_get" id="P{|VwG4P,bnIXF~pocpl">
-					<field name="VAR" id="X[uOmNBKaMFfL2E7MBk@">Switch off time
-					</field>
+					<field name="VAR" id="X[uOmNBKaMFfL2E7MBk@">Switch off time</field>
 				      </block>
 				    </value>
 				    <statement name="CONTENT">
 				      <block type="wappsto_change" id="]-3+ZlvYBl*Ux)|iPIlU">
 					<value name="VALUE">
 					  <block type="wappsto_value" id="hkxe0cFK6Ka]#o}OToN:">
-					    <field name="NAME">charge starting
-					    </field>
+					    <field name="NAME">charge starting</field>
 					    <data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"charge starting","id":"9a0c9b69-8389-4095-ba92-b9c585eb6c9f","type":"boolean","number":{"mapping":{"0":"off","1":"on"},"max":1,"min":0,"step":1,"unit":""}},"states":{"report":"cfcdb03c-9a84-4c92-ba1a-ec6188801909","control":"a7a46196-a45d-4421-aebd-33b242d3f662"}}
 					    </data>
 					  </block>
@@ -284,8 +257,7 @@
 					  <block type="wappsto_console_log" id="=9HW%JIra^gT]Hbm.a8k">
 					    <value name="log">
 					      <block type="text" id="]L-_azGb^H?W[kB}=j=S">
-						<field name="TEXT">Stopped charging
-						</field>
+						<field name="TEXT">Stopped charging</field>
 					      </block>
 					    </value>
 					  </block>
@@ -304,22 +276,18 @@
 		</statement>
 		<value name="IF1">
 		  <block type="logic_compare" id="~H)4SwHH)Wr=ThkD/}-c">
-		    <field name="OP">EQ
-		    </field>
+		    <field name="OP">EQ</field>
 		    <value name="A">
 		      <block type="text_indexOf" id="]b|`G1W(/_hSb*A*hpce">
-			<field name="END">FIRST
-			</field>
+			<field name="END">FIRST</field>
 			<value name="VALUE">
 			  <block type="variables_get" id="quPFa_6p{*o_N-_8:Xgl">
-			    <field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData
-			    </field>
+			    <field name="VAR" id="+r3,+rP7^Re]``Z{LQh`">receivedData</field>
 			  </block>
 			</value>
 			<value name="FIND">
 			  <block type="text" id=")QG4Mcq`(kjc2hcX=1BS">
-			    <field name="TEXT">Stop Charging
-			    </field>
+			    <field name="TEXT">Stop Charging</field>
 			  </block>
 			</value>
 		      </block>
@@ -336,16 +304,14 @@
 		  <block type="wappsto_console_log" id="q{A:@FtFxx}8h_-YPl?A">
 		    <value name="log">
 		      <block type="text" id="yknX8a(0uLq|Lf4BSWXw">
-			<field name="TEXT">Stopping to charge
-			</field>
+			<field name="TEXT">Stopping to charge</field>
 		      </block>
 		    </value>
 		    <next>
 		      <block type="wappsto_change" id="OTAWN%Z)3]_R:lYa9T$d">
 			<value name="VALUE">
 			  <block type="wappsto_value" id="FsQqFtFn`=opd5uzzqyW">
-			    <field name="NAME">charge starting
-			    </field>
+			    <field name="NAME">charge starting</field>
 			    <data>{"network":{"name":"Tesla garage","id":"77f01fff-6ea2-4188-aefa-fee9f19e8a5c"},"device":{"name":"Tesla car 1492932425986123","id":"b57ff089-6259-47ff-8f57-7be4a09ff27b"},"value":{"name":"charge starting","id":"9a0c9b69-8389-4095-ba92-b9c585eb6c9f","type":"boolean","number":{"mapping":{"0":"off","1":"on"},"max":1,"min":0,"step":1,"unit":""}},"states":{"report":"cfcdb03c-9a84-4c92-ba1a-ec6188801909","control":"a7a46196-a45d-4421-aebd-33b242d3f662"}}
 			    </data>
 			  </block>
@@ -370,8 +336,7 @@
 		  <block type="wappsto_console_log" id="G0mR%laMn4R{iiP4dz1%">
 		    <value name="log">
 		      <block type="text" id="6{#%snaDSH=XUEw-39-U">
-			<field name="TEXT">Nothing to do
-			</field>
+			<field name="TEXT">Nothing to do</field>
 		      </block>
 		    </value>
 		  </block>
