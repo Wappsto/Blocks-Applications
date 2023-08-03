@@ -1,0 +1,169 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+    <variables>
+        <variable id="!ps(~=}MtdU_UpHRu03$">Event Name</variable>
+        <variable id="}3^+k5$yfu`e0u{$fP,*">Event Description</variable>
+        <variable id="CG0K7sbK:}%``kr`;Vm=">Event Location</variable>
+        <variable id="{pv}2QOdM|:A9~=HjY-T">Event Start Time</variable>
+        <variable id="L/dUOT+Wc(s+AsdDI6Os">Event End Time</variable>
+        <variable id="G3!cNv{.$OVd8oy1G?rG">Generated calendar event</variable>
+        <variable id="XtpOf!@Pc%h69P}%/X30" type="wappsto">My Google Calendar set Event</variable>
+    </variables>
+    <block id="1=$t/12leZwF!Uy07)f1" type="wappsto_on_init" x="-1730" y="-1430">
+        <statement name="Content">
+            <block id="D5/F$F;Pu+FdvEuH@k:0" type="wappsto_console_log">
+                <value name="log">
+                    <block id="nI-WygyGYd8yq9Bcm!H5" type="text">
+                        <field name="TEXT">Blockly application started...</field>
+                    </block>
+                </value>
+                <next>
+                    <block id="-8Bw=c]HWTYYUn^jsMy5" type="variables_set_wappsto">
+                        <field id="XtpOf!@Pc%h69P}%/X30" name="FIELD_NAME" variabletype="wappsto">My Google Calendar set Event</field>
+                        <value name="VALUE">
+                            <block id="F?vq-|Qd~n:.YuvP4)=t" type="wappsto_value">
+                                <field name="NAME">set Event</field>
+                                <data>{&quot;network&quot;:{&quot;name&quot;:&quot;Google Calendar&quot;,&quot;id&quot;:&quot;97e929bf-6376-4284-ba1f-81c121611eca&quot;},&quot;device&quot;:{&quot;name&quot;:&quot;Tesla Charging&quot;,&quot;id&quot;:&quot;1f7cdda9-f227-4926-b81f-070d5c667ded&quot;},&quot;value&quot;:{&quot;name&quot;:&quot;set Event&quot;,&quot;id&quot;:&quot;3cbbdae3-75ca-4e9d-b9d2-59989c54dd8a&quot;,&quot;type&quot;:&quot;blob&quot;,&quot;blob&quot;:{&quot;encoding&quot;:&quot;base64&quot;,&quot;max&quot;:280}},&quot;states&quot;:{&quot;report&quot;:null,&quot;control&quot;:&quot;ad314032-c0dc-41fe-a8a2-ffbc010b3707&quot;}}</data>
+                            </block>
+                        </value>
+                        <next>
+                            <block id="o6rK]1pill7Zhd*7^44#" type="wappsto_change">
+                                <value name="VALUE">
+                                    <block id="PFN2ZpwD1u~QhIBU[`{K" type="variables_get_wappsto">
+                                        <field id="XtpOf!@Pc%h69P}%/X30" name="FIELD_NAME" variabletype="wappsto">My Google Calendar set Event</field>
+                                    </block>
+                                </value>
+                                <value name="DATA">
+                                    <shadow id="M8$R#?FF-jNlxgaGm`-U" type="math_number">
+                                        <field name="NUM">1</field>
+                                    </shadow>
+                                    <block id="?06dA4+(m}(7/58{6fxZ" type="procedures_callreturn">
+                                        <mutation name="Generate Calendar event">
+                                            <arg name="Event Name"/>
+                                            <arg name="Event Description"/>
+                                            <arg name="Event Location"/>
+                                            <arg name="Event Start Time"/>
+                                            <arg name="Event End Time"/>
+                                        </mutation>
+                                        <value name="ARG0">
+                                            <block id=")p]gp5!v%~uWmn(.Y+UU" type="text">
+                                                <field name="TEXT">Test event</field>
+                                            </block>
+                                        </value>
+                                        <value name="ARG1">
+                                            <block id="nSN|;O3uZ6Ik3xSxpJQ%" type="text">
+                                                <field name="TEXT">Test event description</field>
+                                            </block>
+                                        </value>
+                                        <value name="ARG2">
+                                            <block id="Pfdffjj,.]UMm:wATJGl" type="text">
+                                                <field name="TEXT">here</field>
+                                            </block>
+                                        </value>
+                                        <value name="ARG3">
+                                            <block id="zwWT;AEMx3JM72,cEP@U" type="time_now"/>
+                                        </value>
+                                        <value name="ARG4">
+                                            <block id="cOG_qX;*:|!VgDBaT/I{" type="time_edit">
+                                                <field name="OPERATION">add</field>
+                                                <field name="PERIOD">hours</field>
+                                                <value name="TIMESTAMP">
+                                                    <block id="3qX$_p0Fh@1[1)7_3,!_" type="time_now"/>
+                                                </value>
+                                                <value name="NUMBER">
+                                                    <block id="mOkY0zA2{?8AxCeNNeE]" type="math_number">
+                                                        <field name="NUM">1</field>
+                                                    </block>
+                                                </value>
+                                            </block>
+                                        </value>
+                                    </block>
+                                </value>
+                            </block>
+                        </next>
+                    </block>
+                </next>
+            </block>
+        </statement>
+    </block>
+    <block id="C(ZTmHc./_6jud)]D5c%" type="procedures_defreturn" x="-1730" y="-1110">
+        <mutation>
+            <arg name="Event Name" varid="!ps(~=}MtdU_UpHRu03$"/>
+            <arg name="Event Description" varid="}3^+k5$yfu`e0u{$fP,*"/>
+            <arg name="Event Location" varid="CG0K7sbK:}%``kr`;Vm="/>
+            <arg name="Event Start Time" varid="{pv}2QOdM|:A9~=HjY-T"/>
+            <arg name="Event End Time" varid="L/dUOT+Wc(s+AsdDI6Os"/>
+        </mutation>
+        <field name="NAME">Generate Calendar event</field>
+        <comment h="80" pinned="false" w="160">Describe this function...</comment>
+        <statement name="STACK">
+            <block id="e_$8vsieu=fKJm=AaE:@" type="variables_set">
+                <field id="G3!cNv{.$OVd8oy1G?rG" name="VAR">Generated calendar event</field>
+                <value name="VALUE">
+                    <block id="[xa}s~CoMZ`6[+5~GB`c" type="text_join">
+                        <mutation items="11"/>
+                        <value name="ADD0">
+                            <block id="Djg77Yy|yIV@B(a:.U=^" type="text">
+                                <field name="TEXT">{&quot;name&quot;:&quot;</field>
+                            </block>
+                        </value>
+                        <value name="ADD1">
+                            <block id="_|GBO%Tu+sUgA0aB6_|5" type="variables_get">
+                                <field id="!ps(~=}MtdU_UpHRu03$" name="VAR">Event Name</field>
+                            </block>
+                        </value>
+                        <value name="ADD2">
+                            <block id="vq*3:}(6h;YT-MRKlvnm" type="text">
+                                <field name="TEXT">&quot;,&quot;description&quot;:&quot;</field>
+                            </block>
+                        </value>
+                        <value name="ADD3">
+                            <block id="#-xg5@R-;}Zkw]R3s:u#" type="variables_get">
+                                <field id="}3^+k5$yfu`e0u{$fP,*" name="VAR">Event Description</field>
+                            </block>
+                        </value>
+                        <value name="ADD4">
+                            <block id="Q0v2H28(]Q@o7k]5`9oc" type="text">
+                                <field name="TEXT">&quot;,&quot;location&quot;:&quot;</field>
+                            </block>
+                        </value>
+                        <value name="ADD5">
+                            <block id="XFY_SC{Utn}P:s4p,kna" type="variables_get">
+                                <field id="CG0K7sbK:}%``kr`;Vm=" name="VAR">Event Location</field>
+                            </block>
+                        </value>
+                        <value name="ADD6">
+                            <block id="|*P6gg[h1z4P)U4]}INX" type="text">
+                                <field name="TEXT">&quot;,&quot;start&quot;:&quot;</field>
+                            </block>
+                        </value>
+                        <value name="ADD7">
+                            <block id="xu!:k8:s`5m!Ot}nQ1ip" type="variables_get">
+                                <field id="{pv}2QOdM|:A9~=HjY-T" name="VAR">Event Start Time</field>
+                            </block>
+                        </value>
+                        <value name="ADD8">
+                            <block id="h?k^GUr_)]^V^Pr}@|+j" type="text">
+                                <field name="TEXT">&quot;,&quot;end&quot;:&quot;</field>
+                            </block>
+                        </value>
+                        <value name="ADD9">
+                            <block id="4-*fdmrB8$dtLxM7}84o" type="variables_get">
+                                <field id="L/dUOT+Wc(s+AsdDI6Os" name="VAR">Event End Time</field>
+                            </block>
+                        </value>
+                        <value name="ADD10">
+                            <block id="FQXBSE82:]kjjlUns`;G" type="text">
+                                <field name="TEXT">&quot;}</field>
+                            </block>
+                        </value>
+                    </block>
+                </value>
+            </block>
+        </statement>
+        <value name="RETURN">
+            <block id="9TMa,?Aj_=m60siv`OH_" type="variables_get">
+                <field id="G3!cNv{.$OVd8oy1G?rG" name="VAR">Generated calendar event</field>
+            </block>
+        </value>
+    </block>
+</xml>
