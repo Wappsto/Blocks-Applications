@@ -1,0 +1,310 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <variables>
+    <variable type="wappsto" id="at-E!@XoWkO*aO!}HW(b">My Power Meter</variable>
+    <variable id="cs/%p;)+blx7|n`W(e3-">receivedData</variable>
+    <variable type="wappsto" id="z2keA9@}B`6tB~X-:^h|">My Switch</variable>
+    <variable id="hK7rKry{8_YKG/p91hIv">Timer started</variable>
+  </variables>
+  <block type="named_timer_def" id="vlvQ@_5izr4sD,hM9Yc/" x="270" y="-110">
+    <field name="NAME">Switch Off Timer</field>
+    <statement name="STATEMENTS">
+      <block type="wappsto_console_log" id=":Dcev^`Me~^aR0F7!Q8F">
+        <value name="log">
+          <block type="text" id="ZR$D,,icU2;!6s:*Zg(E">
+            <field name="TEXT">Timer expired. Switching Off</field>
+          </block>
+        </value>
+        <next>
+          <block type="wappsto_change" id="lt^/XbA?|iQ~/fSM//+R">
+            <value name="VALUE">
+              <block type="variables_get_wappsto" id="4w,U]ZHjKzxU6A9MI%N?">
+                <field name="FIELD_NAME" id="z2keA9@}B`6tB~X-:^h|" variabletype="wappsto">My Switch</field>
+              </block>
+            </value>
+            <value name="DATA">
+              <shadow type="math_number" id="{m66RPQzs`Mh]3e?othQ">
+                <field name="NUM">1</field>
+              </shadow>
+              <block type="enum_dropdown" id="Z*~-mEzEqC|Dx37Bmz4h">
+                <mutation options="[[&quot;off&quot;,&quot;0&quot;],[&quot;on&quot;,&quot;1&quot;]]"/>
+                <field name="ENUM">0</field>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set" id="d-|7n}`+ktc/%[Oke/r)">
+                <field name="VAR" id="hK7rKry{8_YKG/p91hIv">Timer started</field>
+                <value name="VALUE">
+                  <block type="logic_boolean" id=":}9.Ap.VQ}}D@c8sS(+:">
+                    <field name="BOOL">FALSE</field>
+                  </block>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="wappsto_on_init" id="`|I/Tcq[2aJW#4NrOuHR" x="270" y="50">
+    <statement name="Content">
+      <block type="wappsto_console_log" id="4%[Vtv6!Qu4|5C!6Utmy">
+        <value name="log">
+          <block type="text" id="L4E!U@-0,@{A1$U2hhoS">
+            <field name="TEXT">Blockly application started...</field>
+          </block>
+        </value>
+        <next>
+          <block type="variables_set_wappsto" id="}q=N2rko,{Pr:#q@%4bf">
+            <field name="FIELD_NAME" id="z2keA9@}B`6tB~X-:^h|" variabletype="wappsto">My Switch</field>
+            <value name="VALUE">
+              <block type="wappsto_value" id="kM!K9E:x(ov6U8lNVxG*">
+                <field name="NAME">Switch</field>
+                <data>{"network":{"name":"Home","id":"3c902740-207c-47ff-9397-9858b7fa0cc9"},"device":{"name":"Aqara Smart Plug","id":"09f8a715-70f3-4cee-ae7c-69ec80583146"},"value":{"name":"Switch","id":"695e7b80-8d44-4ad3-8958-45f13f84c99e","type":"boolean","number":{"mapping":{"0":"off","1":"on"},"max":1,"min":0,"step":1,"unit":""}},"states":{"report":"983cdcbe-29a3-415b-a441-46f49f8eb825","control":"5cfb4bdf-6b2a-4b78-ac61-f1efdf3a3e9d"}}</data>
+              </block>
+            </value>
+            <next>
+              <block type="variables_set_wappsto" id="Q7#5?H}:gxvyeWn7QR1Q">
+                <field name="FIELD_NAME" id="at-E!@XoWkO*aO!}HW(b" variabletype="wappsto">My Power Meter</field>
+                <value name="VALUE">
+                  <block type="wappsto_value" id="BnEfGihZyf!HmM`%oZ5}">
+                    <field name="NAME">Power Meter</field>
+                    <data>{"network":{"name":"Home","id":"3c902740-207c-47ff-9397-9858b7fa0cc9"},"device":{"name":"Aqara Smart Plug","id":"09f8a715-70f3-4cee-ae7c-69ec80583146"},"value":{"name":"Power Meter","id":"085ff5f8-f2df-4fa1-908a-c424785edbe2","type":"power","number":{"max":1000000,"min":-1000000,"step":0.1,"unit":"W"}},"states":{"report":"25787534-1377-48f5-b0cf-dbe34ae929eb","control":null}}</data>
+                  </block>
+                </value>
+                <next>
+                  <block type="controls_if" id="_ifx~;#v=PugbGfk+EhF">
+                    <value name="IF0">
+                      <block type="logic_compare" id="bV)er_Urk_M:k/%!PR-P">
+                        <field name="OP">EQ</field>
+                        <value name="A">
+                          <block type="wappsto_get_state" id="dUn9uRp$R[7_^A9b!Alx">
+                            <value name="VALUE">
+                              <block type="variables_get_wappsto" id=")5SUWM#JKp%@VkIZiC;i">
+                                <field name="FIELD_NAME" id="z2keA9@}B`6tB~X-:^h|" variabletype="wappsto">My Switch</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <shadow type="math_number" id="L9mObZd8jEeZ)B55QhNg">
+                            <field name="NUM">1</field>
+                          </shadow>
+                          <block type="enum_dropdown" id="6?[6:nQr#PnyC9$EpAMJ">
+                            <mutation options="[[&quot;off&quot;,&quot;0&quot;],[&quot;on&quot;,&quot;1&quot;]]"/>
+                            <field name="ENUM">1</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="controls_if" id="dv`B5e!ychmyAjE_%+~@">
+                        <value name="IF0">
+                          <block type="logic_compare" id="q6+*6mjIgkQ[cY=7)k4p">
+                            <field name="OP">LT</field>
+                            <value name="A">
+                              <block type="wappsto_get_state" id="vlwo63IGel=+LF:R`=y|">
+                                <value name="VALUE">
+                                  <block type="variables_get_wappsto" id="FP5G/4H/i,;15FUougA]">
+                                    <field name="FIELD_NAME" id="at-E!@XoWkO*aO!}HW(b" variabletype="wappsto">My Power Meter</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="=P18VyuY*uL,0Lex4j$x">
+                                <field name="NUM">30</field>
+                              </shadow>
+                            </value>
+                          </block>
+                        </value>
+                        <statement name="DO0">
+                          <block type="wappsto_console_log" id="Ag$=DJ@13!5-U3#X543;">
+                            <value name="log">
+                              <block type="text" id="@kpV/z9EbB$IkgS-[K,p">
+                                <field name="TEXT">Below Threshold. Starting timer...</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="named_timer_start" id="M@LC=`=-NBN;#Q(Bd7*E">
+                                <mutation options="[[&quot;Switch Off Timer&quot;,&quot;Switch Off Timer&quot;]]"/>
+                                <field name="NAME">Switch Off Timer</field>
+                                <field name="DURATION">minutes</field>
+                                <value name="TIMEOUT">
+                                  <shadow type="math_number" id="LgV!cr*A[E%?T`U0r64^">
+                                    <field name="NUM">5</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="variables_set" id="RY6`?,Q_I3!pe,^nCcw5">
+                                    <field name="VAR" id="hK7rKry{8_YKG/p91hIv">Timer started</field>
+                                    <value name="VALUE">
+                                      <block type="logic_boolean" id="U|~m/N:Ix2nOH8g,4@j6">
+                                        <field name="BOOL">TRUE</field>
+                                      </block>
+                                    </value>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </statement>
+                      </block>
+                    </statement>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+  <block type="wappsto_on_change" id="PTjE*4r[tGC?5RYi^@m/" x="270" y="410">
+    <mutation isChild="false"/>
+    <value name="VALUE">
+      <block type="variables_get_wappsto" id="*gE,GQ{]NK4Yje:#-o.~">
+        <field name="FIELD_NAME" id="at-E!@XoWkO*aO!}HW(b" variabletype="wappsto">My Power Meter</field>
+      </block>
+    </value>
+    <value name="DATA">
+      <block type="variables_get" id="aB)l+:f-K=F-wZOqj,71">
+        <field name="VAR" id="cs/%p;)+blx7|n`W(e3-">receivedData</field>
+      </block>
+    </value>
+    <statement name="CONTENT">
+      <block type="wappsto_console_log" id="(e=08[;)nPm${Apky`{j">
+        <value name="log">
+          <block type="text" id="@f$e,jPqQk-nrXFyRaHb">
+            <field name="TEXT">Value received</field>
+          </block>
+        </value>
+        <next>
+          <block type="wappsto_console_log" id="e_{5iDN~ceVVt+pCi,V6">
+            <value name="log">
+              <block type="variables_get" id="N|,1Y(v.Mf=/kK0{q8_b">
+                <field name="VAR" id="cs/%p;)+blx7|n`W(e3-">receivedData</field>
+              </block>
+            </value>
+            <next>
+              <block type="controls_if" id="DMxhc?c?sAwNk1@QE{!B">
+                <mutation else="1"/>
+                <value name="IF0">
+                  <block type="logic_compare" id="Z|fFE-Czq^}OGs9vx=k4">
+                    <field name="OP">GT</field>
+                    <value name="A">
+                      <block type="variables_get" id="}[XMoV*c-O*VbD.L-c8V">
+                        <field name="VAR" id="cs/%p;)+blx7|n`W(e3-">receivedData</field>
+                      </block>
+                    </value>
+                    <value name="B">
+                      <shadow type="math_number" id="nLl,=YJt[[y=%ot`T^-a">
+                        <field name="NUM">30</field>
+                      </shadow>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO0">
+                  <block type="wappsto_console_log" id="Gaa^v=A|jW*#*9(I~qKh">
+                    <value name="log">
+                      <block type="text" id="O_pgs1PCnDjTuH{r0MS)">
+                        <field name="TEXT">Above Threshold, stopping timer</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="named_timer_stop" id="2-T?xW/v*9yH8x3r.y;o">
+                        <mutation options="[[&quot;Switch Off Timer&quot;,&quot;Switch Off Timer&quot;]]"/>
+                        <field name="NAME">Switch Off Timer</field>
+                        <next>
+                          <block type="variables_set" id="d,9}k$`X8B.c./B?:@6a">
+                            <field name="VAR" id="hK7rKry{8_YKG/p91hIv">Timer started</field>
+                            <value name="VALUE">
+                              <block type="logic_boolean" id="9u*$ZzOsY,{I!~h?.+TL">
+                                <field name="BOOL">FALSE</field>
+                              </block>
+                            </value>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+                <statement name="ELSE">
+                  <block type="controls_if" id="-k::^#s%?p(*[%LJ[u|f">
+                    <value name="IF0">
+                      <block type="logic_operation" id="`lJw(M%0kvX_{_hs7Flm">
+                        <field name="OP">AND</field>
+                        <value name="A">
+                          <block type="logic_compare" id="u{vVaxxMzUuxR4?OxZO?">
+                            <field name="OP">EQ</field>
+                            <value name="A">
+                              <block type="wappsto_get_state" id="D$E`;o4M+%=fRs=F?`g)">
+                                <value name="VALUE">
+                                  <block type="variables_get_wappsto" id="vIzHaF:*?k|Xu/ydUj8;">
+                                    <field name="FIELD_NAME" id="z2keA9@}B`6tB~X-:^h|" variabletype="wappsto">My Switch</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </value>
+                            <value name="B">
+                              <shadow type="math_number" id="L9mObZd8jEeZ)B55QhNg">
+                                <field name="NUM">1</field>
+                              </shadow>
+                              <block type="enum_dropdown" id="V=X0]DMCA$[BVJA|Ytb1">
+                                <mutation options="[[&quot;off&quot;,&quot;0&quot;],[&quot;on&quot;,&quot;1&quot;]]"/>
+                                <field name="ENUM">1</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="B">
+                          <block type="logic_negate" id="u.h)%PZ8;u,t:+z)zv^x">
+                            <value name="BOOL">
+                              <block type="variables_get" id=";7zeS#HUD:*}86o|rJ~#">
+                                <field name="VAR" id="hK7rKry{8_YKG/p91hIv">Timer started</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <statement name="DO0">
+                      <block type="wappsto_console_log" id="kcLkZ:YK(sHg$Yj1#)0v">
+                        <value name="log">
+                          <block type="text" id="z[(n8HJryd;2)4`aYMz-">
+                            <field name="TEXT">Below Threshold. Starting timer...</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="named_timer_start" id="5F?E*Efa]5]]176Ja9Ei">
+                            <mutation options="[[&quot;Switch Off Timer&quot;,&quot;Switch Off Timer&quot;]]"/>
+                            <field name="NAME">Switch Off Timer</field>
+                            <field name="DURATION">minutes</field>
+                            <value name="TIMEOUT">
+                              <shadow type="math_number" id="%3.A4.{Bm!htK9oHxR4!">
+                                <field name="NUM">5</field>
+                              </shadow>
+                            </value>
+                            <next>
+                              <block type="variables_set" id="IYUWD#9q=ZQ-wJp9A(PA">
+                                <field name="VAR" id="hK7rKry{8_YKG/p91hIv">Timer started</field>
+                                <value name="VALUE">
+                                  <block type="logic_boolean" id="lWs:)i|WnMB+Kx}w}i$~">
+                                    <field name="BOOL">TRUE</field>
+                                  </block>
+                                </value>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </statement>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+  </block>
+</xml>
